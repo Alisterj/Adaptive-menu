@@ -28,8 +28,11 @@ nav{
     font-size: 14px;
     font-weight: bold;
 }
-.topnav a:hover{
+.topnav a:hover:not(:last-child){
     border-bottom: 3px solid #da4917;
+}
+.topnav a:hover:last-child{
+    color: red;
 }
 .topnav .icon{
     display: none;
@@ -64,7 +67,7 @@ nav{
         left: -200px;
     }
     header .topnav.responsive{
-        height: 340px;
+        height: 300px;
     }
     .topnav.responsive a.icon{
         position: absolute;
