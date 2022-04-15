@@ -1,2 +1,51 @@
 body{
+    font-family: "Franklin Gothic Medium";
+}
+header{
+    width: 100%;
+    background-color: #2c2b2b;
+    display: flex;
+}
+.header__logo,
+nav a{
+    text-transform: uppercase;
+}
+.header__logo{
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 56px 0 15px 12%;
+}
+nav{
+    margin-top: 56px;
+    margin-left: 29%;
+}
+.topnav a{
+    color: #ffffff;
+    text-align: center;
+    padding: 12px 16px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.topnav a:hover{
+    border-bottom: 3px solid #da4917;
+}
+.topnav .icon{
+    display: none;
+}
+@media screen and (max-width: 1010px){
+    .topnav a{
+        display: none;
+    }
+    .topnav a.icon{
+        float: right;
+        margin-top: -17px;
+        display: block;
+        color: #ffffff;
+        font-size: 25px;
+    }
+    nav{
+        width: 100%;
+    }
 }
